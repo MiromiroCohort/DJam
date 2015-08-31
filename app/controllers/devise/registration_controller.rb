@@ -1,8 +1,7 @@
-class HostsController < ApplicationController
-  before_action :authenticate_host!
+class RegistrationsController < ApplicationController #< ActionController::Base
   def create
-    p "hello"
-    p params
+    puts "hello"
+    #puts params
     # @host = Host.create(params[:host])
     # session[:host_id] = host.id
     # redirect '/playlists'
